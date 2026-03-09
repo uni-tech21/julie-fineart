@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>my portfolio two</title>
+  <title>Contact | Fine Art Gallery</title>
   <meta name="description" content="website description" />
   <meta name="keywords" content="website keywords, website keywords" />
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
@@ -14,13 +14,12 @@
 <body>
   <div id="main">
     <header>
-      <div id="logo"><h1>MY<a href="#">PORTFOLIO</a>TWO</h1></div>
+      <div id="logo"><h1>FINE<a href="#">ART</a>GALLERY</h1></div>
       <nav>
         <ul class="lavaLampWithImage" id="lava_menu">
           <li><a href="index.html">home</a></li>
-          <li><a href="about.html">about me</a></li>
-          <li><a href="portfolio.html">my portfolio</a></li>
-          <li><a href="blog.html">blog</a></li>
+          <li><a href="about.html">about the artist</a></li>
+          <li><a href="portfolio.html">gallery</a></li>
           <li class="current"><a href="contact.php">contact</a></li>
         </ul>
       </nav>
@@ -92,8 +91,8 @@
       </div>
     </div>
     <footer>
-      <p><a href="index.html">home</a> | <a href="about.html">about me</a> | <a href="portfolio.html">my portfolio</a> | <a href="blog.html">blog</a> | <a href="contact.php">contact</a></p>
-      <p>&copy; 2012 my portfolio two. All Rights Reserved. | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+      <p><a href="index.html">home</a> | <a href="about.html">about the artist</a> | <a href="portfolio.html">gallery</a> | <a href="contact.php">contact</a></p>
+      <p>&copy; 2026 Fine Art Gallery. All Rights Reserved. | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
     </footer>
   </div>
   <!-- javascript at the bottom for fast page loading -->

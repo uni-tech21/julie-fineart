@@ -1,5 +1,7 @@
 ## Project Description
 
-* [live example](https://learning-zone.github.io/website-templates/my-portfolio-two/)
+This repository contains a fine art gallery website template based on the original "My Portfolio Two" design. The site features a homepage, about page, gallery, and contact form. The blog section has been removed.
 
-![alt text](https://github.com/learning-zone/Website-Templates/blob/master/assets/my_portfolio_two.png "my_portfolio_two")
+* [live example](#)
+
+![alt text](https://github.com/learning-zone/Website-Templates/blob/master/assets/my_portfolio_two.png "fine art gallery")
