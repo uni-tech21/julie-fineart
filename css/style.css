@@ -316,6 +316,11 @@ ul.images {
   position:relative;
   margin:0;
   padding:0;
+}
+
+/* shift image left or right by changing --offset value */
+ul.images li img {
+  margin-left: var(--offset, 0px);
 } 
 
 ul.images li {

@@ -91,7 +91,7 @@
       </div>
     </div>
     <footer>
-      <p>www.juliemartinart.co.uk</p>
+      <p>www.juliemartinfineart.co.uk</p>
     </footer>
   </div>
   <!-- javascript at the bottom for fast page loading -->
