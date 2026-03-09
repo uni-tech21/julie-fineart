@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Contact | Fine Art Gallery</title>
+  <title>Contact Julie Martin</title>
   <meta name="description" content="website description" />
   <meta name="keywords" content="website keywords, website keywords" />
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
@@ -14,11 +14,11 @@
 <body>
   <div id="main">
     <header>
-      <div id="logo"><h1>FINE<a href="#">ART</a>GALLERY</h1></div>
+      <div id="logo"><h1>JULIE<a href="#">MARTIN</a></h1></div>
       <nav>
         <ul class="lavaLampWithImage" id="lava_menu">
           <li><a href="index.html">home</a></li>
-          <li><a href="about.html">about the artist</a></li>
+          <li><a href="about.html">about Julie</a></li>
           <li><a href="portfolio.html">gallery</a></li>
           <li class="current"><a href="contact.php">contact</a></li>
         </ul>
@@ -28,16 +28,16 @@
       <div id="sidebar_container">
         <div id="gallery">
           <ul class="images">
-            <li class="show"><img width="450" height="450" src="images/1.jpg" alt="photo_one" /></li>
-            <li><img width="450" height="450" src="images/2.jpg" alt="photo_two" /></li>
-            <li><img width="450" height="450" src="images/3.jpg" alt="photo_three" /></li>
-            <li><img width="450" height="450" src="images/4.jpg" alt="photo_four" /></li>
-            <li><img width="450" height="450" src="images/5.jpg" alt="photo_five" /></li>
+            <li class="show"><img width="450" height="450" src="images/1.jpg" alt="Artwork by Julie Martin" /></li>
+            <li><img width="450" height="450" src="images/2.jpg" alt="Artwork by Julie Martin" /></li>
+            <li><img width="450" height="450" src="images/3.jpg" alt="Artwork by Julie Martin" /></li>
+            <li><img width="450" height="450" src="images/4.jpg" alt="Artwork by Julie Martin" /></li>
+            <li><img width="450" height="450" src="images/5.jpg" alt="Artwork by Julie Martin" /></li>
           </ul>
         </div>
       </div>
       <div id="content">
-        <h1>Contact</h1>
+        <h1>Contact Julie Martin</h1>
         <?php
           // Set-up these 3 parameters
           // 1. Enter the email address you would like the enquiry sent to
@@ -91,8 +91,7 @@
       </div>
     </div>
     <footer>
-      <p><a href="index.html">home</a> | <a href="about.html">about the artist</a> | <a href="portfolio.html">gallery</a> | <a href="contact.php">contact</a></p>
-      <p>&copy; 2026 Fine Art Gallery. All Rights Reserved. | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+      <p>www.juliemartinart.co.uk</p>
     </footer>
   </div>
   <!-- javascript at the bottom for fast page loading -->

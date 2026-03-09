@@ -1,6 +1,6 @@
 ## Project Description
 
-This repository contains a fine art gallery website template based on the original "My Portfolio Two" design. The site features a homepage, about page, gallery, and contact form. The blog section has been removed.
+This repository contains a website template for Julie Martin’s fine art gallery, converted from the original "My Portfolio Two" design. The site features a homepage, about page, gallery, and contact form. The blog section has been removed.
 
 * [live example](#)
 
