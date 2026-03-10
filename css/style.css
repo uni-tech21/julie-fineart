@@ -388,3 +388,101 @@ ul img {
 .lavaLampWithImage li a:hover, .lavaLampWithImage li a:active, .lavaLampWithImage li a:visited {
   border: none;
 }
+
+/* Painting listings gallery */
+#paintings-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin: 30px 0;
+  width: 200%;
+}
+
+.painting-listing {
+  background: #FFF;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.painting-listing:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.painting-image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background: #F0F0F0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.painting-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.painting-details {
+  padding: 20px;
+}
+
+.painting-details h3 {
+  font: normal 150% 'News Cycle', arial, sans-serif;
+  margin: 0 0 10px 0;
+  padding: 0;
+  color: #222;
+}
+
+.painting-medium {
+  font: italic 90% arial, sans-serif;
+  color: #666;
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+
+.painting-dimensions {
+  font: 90% arial, sans-serif;
+  color: #666;
+  margin: 0 0 12px 0;
+  padding: 0;
+}
+
+.painting-description {
+  line-height: 1.6em;
+  margin: 0 0 12px 0;
+  padding: 0;
+  color: #444;
+}
+
+.painting-price {
+  font: bold 110% arial, sans-serif;
+  color: #00B7EC;
+  margin: 12px 0 0 0;
+  padding: 0;
+}
+
+/* Responsive design */
+@media screen and (max-width: 1200px) {
+  #paintings-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #paintings-gallery {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  #content {
+    width: 100%;
+    padding: 0 15px;
+    float: none;
+  }
+}
