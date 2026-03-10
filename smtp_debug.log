@@ -1,0 +1,672 @@
+[2] SERVER -> CLIENT: 220 mx.zoho.eu SMTP Server ready March 10, 2026 4:04:18 PM CET
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-mx.zoho.eu Hello localhost (185.245.82.19 (185.245.82.19))
+250-AUTH LOGIN PLAIN
+250 SIZE 53477376
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 Authentication Successful
+
+[1] CLIENT -> SERVER: MAIL FROM:<enquiries@uni-tech.co.uk>
+
+[2] SERVER -> CLIENT: 250 Sender <enquiries@uni-tech.co.uk> OK
+
+[1] CLIENT -> SERVER: RCPT TO:<unitechcanterbury@gmail.com>
+
+[2] SERVER -> CLIENT: 250 Recipient <unitechcanterbury@gmail.com> OK
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Ok Send data ending with <CRLF>.<CRLF>
+
+[1] CLIENT -> SERVER: Date: Tue, 10 Mar 2026 15:04:17 +0000
+
+[1] CLIENT -> SERVER: To: Uni-Tech <unitechcanterbury@gmail.com>
+
+[1] CLIENT -> SERVER: From: Uni-Tech Website <enquiries@uni-tech.co.uk>
+
+[1] CLIENT -> SERVER: Reply-To: John <unitechcanterbury@gmail.com>
+
+[1] CLIENT -> SERVER: Subject: Enquiry from the website
+
+[1] CLIENT -> SERVER: Message-ID: <eee7yI98myKEdfx7AG4ufBby9VQy6S2hRlzIYtCFpU@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 7.0.2 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=UTF-8
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Name: John
+
+[1] CLIENT -> SERVER: Email: unitechcanterbury@gmail.com
+
+[1] CLIENT -> SERVER: Message: dfsdf
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 Message received
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 mx.zoho.eu closing connection
+
+[2] SERVER -> CLIENT: 220 mx.zoho.eu SMTP Server ready March 10, 2026 4:11:52 PM CET
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-mx.zoho.eu Hello localhost (185.245.82.19 (185.245.82.19))
+250-AUTH LOGIN PLAIN
+250 SIZE 53477376
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 Authentication Successful
+
+[1] CLIENT -> SERVER: MAIL FROM:<enquiries@uni-tech.co.uk>
+
+[2] SERVER -> CLIENT: 250 Sender <enquiries@uni-tech.co.uk> OK
+
+[1] CLIENT -> SERVER: RCPT TO:<unitechcanterbury@gmail.com>
+
+[2] SERVER -> CLIENT: 250 Recipient <unitechcanterbury@gmail.com> OK
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Ok Send data ending with <CRLF>.<CRLF>
+
+[1] CLIENT -> SERVER: Date: Tue, 10 Mar 2026 15:11:52 +0000
+
+[1] CLIENT -> SERVER: To: Uni-Tech <unitechcanterbury@gmail.com>
+
+[1] CLIENT -> SERVER: From: Uni-Tech Website <enquiries@uni-tech.co.uk>
+
+[1] CLIENT -> SERVER: Reply-To: test <test@test.com>
+
+[1] CLIENT -> SERVER: Subject: Enquiry from the website
+
+[1] CLIENT -> SERVER: Message-ID: <Q9qilLNDLSlvqTdYH1BD6oOsjyycsAZVMIDijkhLpw@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 7.0.2 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=UTF-8
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Name: test
+
+[1] CLIENT -> SERVER: Email: test@test.com
+
+[1] CLIENT -> SERVER: Message: test
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 Message received
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 mx.zoho.eu closing connection
+
+[2] SERVER -> CLIENT: 220 mx.zoho.eu SMTP Server ready March 10, 2026 4:12:55 PM CET
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-mx.zoho.eu Hello localhost (185.245.82.19 (185.245.82.19))
+250-AUTH LOGIN PLAIN
+250 SIZE 53477376
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 Authentication Successful
+
+[1] CLIENT -> SERVER: MAIL FROM:<enquiries@uni-tech.co.uk>
+
+[2] SERVER -> CLIENT: 250 Sender <enquiries@uni-tech.co.uk> OK
+
+[1] CLIENT -> SERVER: RCPT TO:<unitechcanterbury@gmail.com>
+
+[2] SERVER -> CLIENT: 250 Recipient <unitechcanterbury@gmail.com> OK
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Ok Send data ending with <CRLF>.<CRLF>
+
+[1] CLIENT -> SERVER: Date: Tue, 10 Mar 2026 15:12:55 +0000
+
+[1] CLIENT -> SERVER: To: Uni-Tech <unitechcanterbury@gmail.com>
+
+[1] CLIENT -> SERVER: From: Uni-Tech Website <enquiries@uni-tech.co.uk>
+
+[1] CLIENT -> SERVER: Reply-To: test <test@test.com>
+
+[1] CLIENT -> SERVER: Subject: Enquiry from the website
+
+[1] CLIENT -> SERVER: Message-ID: <J3MgP3XxWOHd6GS5vZWKLHsoHUqBttlAb5M1unYC1k@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 7.0.2 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=UTF-8
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Name: test
+
+[1] CLIENT -> SERVER: Email: test@test.com
+
+[1] CLIENT -> SERVER: Message: test
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 Message received
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 mx.zoho.eu closing connection
+
+[2] SERVER -> CLIENT: 220 mx.zoho.eu SMTP Server ready March 10, 2026 4:13:10 PM CET
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-mx.zoho.eu Hello localhost (185.245.82.19 (185.245.82.19))
+250-AUTH LOGIN PLAIN
+250 SIZE 53477376
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 Authentication Successful
+
+[1] CLIENT -> SERVER: MAIL FROM:<enquiries@uni-tech.co.uk>
+
+[2] SERVER -> CLIENT: 250 Sender <enquiries@uni-tech.co.uk> OK
+
+[1] CLIENT -> SERVER: RCPT TO:<unitechcanterbury@gmail.com>
+
+[2] SERVER -> CLIENT: 250 Recipient <unitechcanterbury@gmail.com> OK
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Ok Send data ending with <CRLF>.<CRLF>
+
+[1] CLIENT -> SERVER: Date: Tue, 10 Mar 2026 15:13:10 +0000
+
+[1] CLIENT -> SERVER: To: Uni-Tech <unitechcanterbury@gmail.com>
+
+[1] CLIENT -> SERVER: From: Uni-Tech Website <enquiries@uni-tech.co.uk>
+
+[1] CLIENT -> SERVER: Reply-To: John <test@test.com>
+
+[1] CLIENT -> SERVER: Subject: Enquiry from the website
+
+[1] CLIENT -> SERVER: Message-ID: <zwtux8H9KaR6kJMD6TIJyZFK0TVdoO7v8Szbhhz40@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 7.0.2 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=UTF-8
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Name: John
+
+[1] CLIENT -> SERVER: Email: test@test.com
+
+[1] CLIENT -> SERVER: Message: onemore
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 Message received
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 mx.zoho.eu closing connection
+
+[2] SERVER -> CLIENT: 220 mx.zoho.eu SMTP Server ready March 10, 2026 4:31:46 PM CET
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-mx.zoho.eu Hello localhost (185.245.82.19 (185.245.82.19))
+250-AUTH LOGIN PLAIN
+250 SIZE 53477376
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 Authentication Successful
+
+[1] CLIENT -> SERVER: MAIL FROM:<enquiries@uni-tech.co.uk>
+
+[2] SERVER -> CLIENT: 250 Sender <enquiries@uni-tech.co.uk> OK
+
+[1] CLIENT -> SERVER: RCPT TO:<unitechcanterbury@gmail.com>
+
+[2] SERVER -> CLIENT: 250 Recipient <unitechcanterbury@gmail.com> OK
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Ok Send data ending with <CRLF>.<CRLF>
+
+[1] CLIENT -> SERVER: Date: Tue, 10 Mar 2026 15:31:45 +0000
+
+[1] CLIENT -> SERVER: To: Uni-Tech <unitechcanterbury@gmail.com>
+
+[1] CLIENT -> SERVER: From: Uni-Tech Website <enquiries@uni-tech.co.uk>
+
+[1] CLIENT -> SERVER: Reply-To: John <test@testing.com>
+
+[1] CLIENT -> SERVER: Subject: Enquiry from the website
+
+[1] CLIENT -> SERVER: Message-ID: <AZzBscY8NaBhN3RuUIn6cJSY5K1bRQFFGfwgbfG0@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 7.0.2 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=UTF-8
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Name: John
+
+[1] CLIENT -> SERVER: Email: test@testing.com
+
+[1] CLIENT -> SERVER: Message: hello
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 Message received
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 mx.zoho.eu closing connection
+
+[2] SERVER -> CLIENT: 220 mx.zoho.eu SMTP Server ready March 10, 2026 4:34:08 PM CET
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-mx.zoho.eu Hello localhost (185.245.82.19 (185.245.82.19))
+250-AUTH LOGIN PLAIN
+250 SIZE 53477376
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 Authentication Successful
+
+[1] CLIENT -> SERVER: MAIL FROM:<enquiries@uni-tech.co.uk>
+
+[2] SERVER -> CLIENT: 250 Sender <enquiries@uni-tech.co.uk> OK
+
+[1] CLIENT -> SERVER: RCPT TO:<enquiries@uni-tech.co.uk>
+
+[2] SERVER -> CLIENT: 250 Recipient <enquiries@uni-tech.co.uk> OK
+
+[1] CLIENT -> SERVER: RCPT TO:<unitechcanterbury@gmail.com>
+
+[2] SERVER -> CLIENT: 250 Recipient <unitechcanterbury@gmail.com> OK
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Ok Send data ending with <CRLF>.<CRLF>
+
+[1] CLIENT -> SERVER: Date: Tue, 10 Mar 2026 15:34:08 +0000
+
+[1] CLIENT -> SERVER: To: Uni-Tech <enquiries@uni-tech.co.uk>, Client <unitechcanterbury@gmail.com>
+
+[1] CLIENT -> SERVER: From: Uni-Tech Website <enquiries@uni-tech.co.uk>
+
+[1] CLIENT -> SERVER: Reply-To: John <test@testing.com>
+
+[1] CLIENT -> SERVER: Subject: Enquiry from the website
+
+[1] CLIENT -> SERVER: Message-ID: <31g4jlCrG0pphMtrivxMQGlJbbY9NgaUwJsfppzPA@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 7.0.2 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=UTF-8
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Name: John
+
+[1] CLIENT -> SERVER: Email: test@testing.com
+
+[1] CLIENT -> SERVER: Message: hello
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 Message received
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 mx.zoho.eu closing connection
+
+[2] SERVER -> CLIENT: 220 mx.zoho.eu SMTP Server ready March 10, 2026 4:34:34 PM CET
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-mx.zoho.eu Hello localhost (185.245.82.19 (185.245.82.19))
+250-AUTH LOGIN PLAIN
+250 SIZE 53477376
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 Authentication Successful
+
+[1] CLIENT -> SERVER: MAIL FROM:<enquiries@uni-tech.co.uk>
+
+[2] SERVER -> CLIENT: 250 Sender <enquiries@uni-tech.co.uk> OK
+
+[1] CLIENT -> SERVER: RCPT TO:<enquiries@uni-tech.co.uk>
+
+[2] SERVER -> CLIENT: 250 Recipient <enquiries@uni-tech.co.uk> OK
+
+[1] CLIENT -> SERVER: RCPT TO:<unitechcanterbury@gmail.com>
+
+[2] SERVER -> CLIENT: 250 Recipient <unitechcanterbury@gmail.com> OK
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Ok Send data ending with <CRLF>.<CRLF>
+
+[1] CLIENT -> SERVER: Date: Tue, 10 Mar 2026 15:34:34 +0000
+
+[1] CLIENT -> SERVER: To: Uni-Tech <enquiries@uni-tech.co.uk>, Client <unitechcanterbury@gmail.com>
+
+[1] CLIENT -> SERVER: From: Uni-Tech Website <enquiries@uni-tech.co.uk>
+
+[1] CLIENT -> SERVER: Reply-To: Testing <Testing@testing.com>
+
+[1] CLIENT -> SERVER: Subject: Enquiry from the website
+
+[1] CLIENT -> SERVER: Message-ID: <rgwhPa8oCe7a4XwENcLRgELI3F1DBLe6ORB3em5Q@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 7.0.2 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=UTF-8
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Name: Testing
+
+[1] CLIENT -> SERVER: Email: Testing@testing.com
+
+[1] CLIENT -> SERVER: Message: Should send to both us and client
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 Message received
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 mx.zoho.eu closing connection
+
+[2] SERVER -> CLIENT: 220 mx.zoho.eu SMTP Server ready March 10, 2026 4:36:02 PM CET
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-mx.zoho.eu Hello localhost (185.245.82.19 (185.245.82.19))
+250-AUTH LOGIN PLAIN
+250 SIZE 53477376
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 Authentication Successful
+
+[1] CLIENT -> SERVER: MAIL FROM:<enquiries@uni-tech.co.uk>
+
+[2] SERVER -> CLIENT: 250 Sender <enquiries@uni-tech.co.uk> OK
+
+[1] CLIENT -> SERVER: RCPT TO:<enquiries@uni-tech.co.uk>
+
+[2] SERVER -> CLIENT: 250 Recipient <enquiries@uni-tech.co.uk> OK
+
+[1] CLIENT -> SERVER: RCPT TO:<unitechcanterbury@gmail.com>
+
+[2] SERVER -> CLIENT: 250 Recipient <unitechcanterbury@gmail.com> OK
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Ok Send data ending with <CRLF>.<CRLF>
+
+[1] CLIENT -> SERVER: Date: Tue, 10 Mar 2026 15:36:02 +0000
+
+[1] CLIENT -> SERVER: To: Uni-Tech <enquiries@uni-tech.co.uk>, Client <unitechcanterbury@gmail.com>
+
+[1] CLIENT -> SERVER: From: Uni-Tech Website <enquiries@uni-tech.co.uk>
+
+[1] CLIENT -> SERVER: Reply-To: Mhmm <wtaf@send.com>
+
+[1] CLIENT -> SERVER: Subject: Enquiry from the website
+
+[1] CLIENT -> SERVER: Message-ID: <qwzWoZR9MmAWxKccTBikxeTWCVdGKZJEOs8DBD0@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 7.0.2 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=UTF-8
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Name: Mhmm
+
+[1] CLIENT -> SERVER: Email: wtaf@send.com
+
+[1] CLIENT -> SERVER: Message: Is the alias working
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 Message received
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 mx.zoho.eu closing connection
+
+[2] SERVER -> CLIENT: 220 mx.zoho.eu SMTP Server ready March 10, 2026 4:38:14 PM CET
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-mx.zoho.eu Hello localhost (185.245.82.19 (185.245.82.19))
+250-AUTH LOGIN PLAIN
+250 SIZE 53477376
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 Authentication Successful
+
+[1] CLIENT -> SERVER: MAIL FROM:<enquiries@uni-tech.co.uk>
+
+[2] SERVER -> CLIENT: 250 Sender <enquiries@uni-tech.co.uk> OK
+
+[1] CLIENT -> SERVER: RCPT TO:<enquiries@uni-tech.co.uk>
+
+[2] SERVER -> CLIENT: 250 Recipient <enquiries@uni-tech.co.uk> OK
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Ok Send data ending with <CRLF>.<CRLF>
+
+[1] CLIENT -> SERVER: Date: Tue, 10 Mar 2026 15:38:13 +0000
+
+[1] CLIENT -> SERVER: To: Uni-Tech <enquiries@uni-tech.co.uk>
+
+[1] CLIENT -> SERVER: From: Uni-Tech Website <enquiries@uni-tech.co.uk>
+
+[1] CLIENT -> SERVER: Reply-To: Mhmm <wtaf@send.com>
+
+[1] CLIENT -> SERVER: Subject: Enquiry from the website
+
+[1] CLIENT -> SERVER: Message-ID: <CLB8AmrbNk0fPG1kDW2dI6y0TPUbtECFlbeDEodfkPE@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 7.0.2 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=UTF-8
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Name: Mhmm
+
+[1] CLIENT -> SERVER: Email: wtaf@send.com
+
+[1] CLIENT -> SERVER: Message: Is the alias working
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 Message received
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 mx.zoho.eu closing connection
+
+[2] SERVER -> CLIENT: 220 mx.zoho.eu SMTP Server ready March 10, 2026 4:38:43 PM CET
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-mx.zoho.eu Hello localhost (185.245.82.19 (185.245.82.19))
+250-AUTH LOGIN PLAIN
+250 SIZE 53477376
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 Authentication Successful
+
+[1] CLIENT -> SERVER: MAIL FROM:<enquiries@uni-tech.co.uk>
+
+[2] SERVER -> CLIENT: 250 Sender <enquiries@uni-tech.co.uk> OK
+
+[1] CLIENT -> SERVER: RCPT TO:<enquiries@uni-tech.co.uk>
+
+[2] SERVER -> CLIENT: 250 Recipient <enquiries@uni-tech.co.uk> OK
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Ok Send data ending with <CRLF>.<CRLF>
+
+[1] CLIENT -> SERVER: Date: Tue, 10 Mar 2026 15:38:43 +0000
+
+[1] CLIENT -> SERVER: To: Uni-Tech <enquiries@uni-tech.co.uk>
+
+[1] CLIENT -> SERVER: From: Uni-Tech Website <enquiries@uni-tech.co.uk>
+
+[1] CLIENT -> SERVER: Reply-To: work <work@work.com>
+
+[1] CLIENT -> SERVER: Subject: Enquiry from the website
+
+[1] CLIENT -> SERVER: Message-ID: <OUa0nPXfPR3Wva8hrki6fYfBmnVdapLgZJTeYNcsKx4@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 7.0.2 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=UTF-8
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Name: work
+
+[1] CLIENT -> SERVER: Email: work@work.com
+
+[1] CLIENT -> SERVER: Message: does it work
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 Message received
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 mx.zoho.eu closing connection
+
