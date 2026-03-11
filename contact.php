@@ -2,9 +2,9 @@
 <html>
 
 <head>
-  <title>Contact Julie Martin</title>
-  <meta name="description" content="website description" />
-  <meta name="keywords" content="website keywords, website keywords" />
+  <title>Contact Julia Heart</title>
+  <meta name="description" content="Contact Julia Heart" />
+  <meta name="keywords" content="Julia Heart, contact, art, enquiry" />
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
@@ -13,11 +13,11 @@
 <body>
   <div id="main">
     <header>
-      <div id="logo"><h1>JULIE<a href="#">MARTIN</a></h1></div>
+      <div id="logo"><h1>JULIA<a href="#">HEART</a></h1></div>
       <nav>
         <ul class="lavaLampWithImage" id="lava_menu">
           <li><a href="index.html">home</a></li>
-          <li><a href="about.html">about Julie</a></li>
+          <li><a href="about.html">about Julia</a></li>
           <li><a href="portfolio.html">gallery</a></li>
           <li class="current"><a href="contact.php">contact</a></li>
         </ul>
@@ -28,26 +28,30 @@
       <div id="sidebar_container">
         <div id="gallery">
           <ul class="images">
-            <li class="show"><img width="450" height="450" src="images/1.jpg" alt="Artwork by Julie Martin" /></li>
-            <li><img width="450" height="450" src="images/2.jpg" alt="Artwork by Julie Martin" /></li>
-            <li><img width="450" height="450" src="images/3.jpg" alt="Artwork by Julie Martin" /></li>
-            <li><img width="450" height="450" src="images/4.jpg" alt="Artwork by Julie Martin" /></li>
-            <li><img width="450" height="450" src="images/5.jpg" alt="Artwork by Julie Martin" /></li>
+            <li class="show"><img width="450" height="450" src="images/1.jpg" alt="Artwork by Julia Heart" /></li>
+            <li><img width="450" height="450" src="images/2.jpg" alt="Artwork by Julia Heart" /></li>
+            <li><img width="450" height="450" src="images/3.jpg" alt="Artwork by Julia Heart" /></li>
+            <li><img width="450" height="450" src="images/4.jpg" alt="Artwork by Julia Heart" /></li>
+            <li><img width="450" height="450" src="images/5.jpg" alt="Artwork by Julia Heart" /></li>
           </ul>
         </div>
       </div>
 
       <div id="content">
-        <h1>Contact Julie Martin</h1>
+        <h1>Contact Julia Heart</h1>
 
         <?php
-          // Main recipient: Uni-Tech
-          $to = 'enquiries@uni-tech.co.uk';
+          ini_set('display_errors', 0);
+          ini_set('display_startup_errors', 0);
+          error_reporting(0);
 
-          // Second recipient: the business/client whose website this is
-          // Change this to the real address OR put it in .env as CLIENT_EMAIL
+          // Main recipient: Julia Heart
+          $to = $_ENV['PRIMARY_EMAIL'] ?? '';
 
-          $subject = 'Enquiry from the website';
+          // Optional second recipient: monitoring copy for you
+          $client_email = $_ENV['MONITOR_EMAIL'] ?? '';
+
+          $subject = 'Enquiry from the Julia Heart website';
           $contact_submitted = 'Your message has been sent.';
 
           // Load Composer + .env once
@@ -59,17 +63,18 @@
             }
           }
 
+          // Reload env values after dotenv
+          $to = $_ENV['PRIMARY_EMAIL'] ?? '';
+          $client_email = $_ENV['MONITOR_EMAIL'] ?? '';
+
           // SMTP settings
-          $client_email = $_ENV['CLIENT_EMAIL'] ?? '';
-
-$use_smtp = filter_var($_ENV['USE_SMTP'] ?? 'false', FILTER_VALIDATE_BOOLEAN);
-$smtp_host = $_ENV['SMTP_HOST'] ?? '';
-$smtp_port = isset($_ENV['SMTP_PORT']) ? intval($_ENV['SMTP_PORT']) : 587;
-$smtp_username = $_ENV['SMTP_USERNAME'] ?? '';
-$smtp_password = $_ENV['SMTP_PASSWORD'] ?? '';
-$smtp_secure = $_ENV['SMTP_SECURE'] ?? 'tls';
-$smtp_from = $_ENV['SMTP_FROM'] ?? 'no-reply@yourdomain.com';
-
+          $use_smtp = filter_var($_ENV['USE_SMTP'] ?? 'false', FILTER_VALIDATE_BOOLEAN);
+          $smtp_host = $_ENV['SMTP_HOST'] ?? '';
+          $smtp_port = isset($_ENV['SMTP_PORT']) ? intval($_ENV['SMTP_PORT']) : 465;
+          $smtp_username = $_ENV['SMTP_USERNAME'] ?? '';
+          $smtp_password = $_ENV['SMTP_PASSWORD'] ?? '';
+          $smtp_secure = $_ENV['SMTP_SECURE'] ?? 'ssl';
+          $smtp_from = $_ENV['SMTP_FROM'] ?? 'no-reply@example.com';
 
           // Form values
           $yourname = '';
@@ -81,11 +86,11 @@ $smtp_from = $_ENV['SMTP_FROM'] ?? 'no-reply@yourdomain.com';
           }
 
           if (!email_is_valid($to)) {
-            echo '<p style="color: red;">You must set a valid Uni-Tech email address.</p>';
+            echo '<p style="color: red;">You must set a valid primary recipient email address.</p>';
           }
 
           if ($client_email !== '' && !email_is_valid($client_email)) {
-            echo '<p style="color: red;">The client email address is not valid.</p>';
+            echo '<p style="color: red;">The monitoring email address is not valid.</p>';
           }
 
           if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_submitted'])) {
@@ -112,21 +117,13 @@ $smtp_from = $_ENV['SMTP_FROM'] ?? 'no-reply@yourdomain.com';
               substr(md5($user_answer), 5, 10) === $answer;
 
             if ($is_valid_submission) {
-
-              // SMTP route
               if ($use_smtp) {
                 if (class_exists('PHPMailer\\PHPMailer\\PHPMailer')) {
                   try {
                     $mail = new PHPMailer\PHPMailer\PHPMailer(true);
-$mail->SMTPDebug = 3;
-$mail->Debugoutput = function($str, $level) {
-    file_put_contents(__DIR__ . '/smtp_debug.log', "[" . $level . "] " . $str . PHP_EOL, FILE_APPEND);
-};
 
-                    $mail->SMTPDebug = 2;
-                    $mail->Debugoutput = function($str, $level) {
-                      file_put_contents(__DIR__ . '/smtp_debug.log', "[" . $level . "] " . $str . PHP_EOL, FILE_APPEND);
-                    };
+                    $mail->Timeout = 15;
+                    $mail->SMTPDebug = 0;
 
                     $mail->isSMTP();
                     $mail->Host = $smtp_host;
@@ -142,26 +139,20 @@ $mail->Debugoutput = function($str, $level) {
                     $mail->isHTML(false);
                     $mail->CharSet = 'UTF-8';
 
-                    $mail->setFrom($smtp_from, 'Uni-Tech Website');
+                    $mail->setFrom($smtp_from, 'Julia Heart Website');
+                    $mail->addAddress($to, 'Julia Heart');
 
-                    // Send to Uni-Tech
-                    $mail->addAddress($to, 'Uni-Tech');
-
-                    // Send to the business/client as well
                     if (!empty($client_email) && email_is_valid($client_email)) {
-                      $mail->addAddress($client_email, 'Client');
+                      $mail->addAddress($client_email, 'Monitoring Copy');
                     }
 
-                    // Person filling out the form
                     $mail->addReplyTo($youremail, $yourname);
-
                     $mail->Subject = $subject;
                     $mail->Body = $message;
 
                     $mail->send();
 
                     $sent_from = $youremail;
-                    $sent_message = $yourmessage;
 
                     $yourname = '';
                     $youremail = '';
@@ -180,14 +171,13 @@ $mail->Debugoutput = function($str, $level) {
                   } catch (Exception $e) {
                     $log = date('[Y-m-d H:i:s]') . " PHPMailer exception: " . $e->getMessage() . PHP_EOL;
                     @file_put_contents(__DIR__ . '/contact_failed.log', $log, FILE_APPEND);
-                    echo '<p style="color: red;">Message could not be sent using SMTP. Check smtp_debug.log and contact_failed.log.</p>';
+                    echo '<p style="color: red;">Message could not be sent using SMTP.</p>';
                   }
                 } else {
-                  echo '<p style="color: orange;">PHPMailer not found. Install with: composer require phpmailer/phpmailer vlucas/phpdotenv</p>';
+                  echo '<p style="color: orange;">PHPMailer not found on the server.</p>';
                 }
               } else {
-                // Fallback mail()
-                $fixed_from = $smtp_from ?: 'no-reply@yourdomain.com';
+                $fixed_from = $smtp_from ?: 'no-reply@example.com';
 
                 $recipients = $to;
                 if (!empty($client_email) && email_is_valid($client_email)) {
@@ -220,7 +210,7 @@ $mail->Debugoutput = function($str, $level) {
                     date('[Y-m-d H:i:s]') . " mail() failed to {$recipients}" . PHP_EOL,
                     FILE_APPEND
                   );
-                  echo '<p style="color: red;">Message could not be sent. The server may not be configured to send mail. Consider enabling SMTP.</p>';
+                  echo '<p style="color: red;">Message could not be sent.</p>';
                 }
               }
 
@@ -235,7 +225,7 @@ $mail->Debugoutput = function($str, $level) {
           $answer = substr(md5($number_1 + $number_2), 5, 10);
         ?>
 
-        <form id="contact" action="contact.php" method="post">
+        <form id="contact" action="https://unitech.page.gd/contact.php" method="post">
           <div class="form_settings">
             <p>
               <span>Name</span>
@@ -272,7 +262,7 @@ $mail->Debugoutput = function($str, $level) {
     </div>
 
     <footer>
-      <p>www.juliemartinfineart.co.uk</p>
+      <p>www.juliaheart.co.uk</p>
     </footer>
   </div>
 
