@@ -19,7 +19,7 @@
           <li><a href="index.html">home</a></li>
           <li><a href="about.html">about Julia</a></li>
           <li><a href="portfolio.html">gallery</a></li>
-          <li class="current"><a href="contact.html">contact</a></li>
+          <li class="current"><a href="https://unitech.page.gd/contact.php">contact</a></li>
         </ul>
       </nav>
     </header>
@@ -95,19 +95,21 @@ document.getElementById('contact').addEventListener('submit', async function (e)
 
   const form = e.target;
   const formData = new FormData(form);
-formData.append('contact_submitted', 'send');
+  formData.append('contact_submitted', 'send');
   const messageBox = document.getElementById('form-message');
 
   messageBox.textContent = 'Sending...';
   messageBox.style.color = 'black';
 
   try {
-    const response = await fetch('https://unitech.page.gd/contact.php', {
+    const response = await fetch('https://unitech.page.gd/cors-test.php', {
       method: 'POST',
       body: formData
     });
 
     const text = await response.text();
+    console.log('STATUS:', response.status);
+    console.log('RESPONSE TEXT:', text);
 
     if (text.toLowerCase().includes('your message has been sent')) {
       messageBox.textContent = 'Your message has been sent.';
@@ -118,6 +120,7 @@ formData.append('contact_submitted', 'send');
       messageBox.style.color = 'red';
     }
   } catch (error) {
+    console.error('FETCH ERROR:', error);
     messageBox.textContent = 'There was a problem sending your message.';
     messageBox.style.color = 'red';
   }
