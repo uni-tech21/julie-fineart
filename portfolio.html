@@ -8,7 +8,6 @@
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <!-- modernizr enables HTML5 elements and feature detects -->
   <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
 </head>
 
@@ -32,7 +31,6 @@
         <p>New paintings are added regularly, so check back often to see the latest creations.</p>
         
         <div id="paintings-gallery">
-          <!-- Painting 1 -->
           <div class="painting-listing">
             <div class="painting-image">
               <img src="images/1.jpg" alt="Painting 1 by Julie Martin" width="400" height="400" />
@@ -41,12 +39,11 @@
               <h3>Painting Title</h3>
               <p class="painting-medium">Medium: Oil on Canvas</p>
               <p class="painting-dimensions">Dimensions: 50cm x 50cm</p>
-              <p class="painting-description">Add your painting description here. Include details about the inspiration, technique, or story behind this piece.</p>
+              <p class="painting-description">Add your painting description here.</p>
               <p class="painting-price">Price: £[Amount]</p>
             </div>
           </div>
 
-          <!-- Painting 2 -->
           <div class="painting-listing">
             <div class="painting-image">
               <img src="images/2.jpg" alt="Painting 2 by Julie Martin" width="400" height="400" />
@@ -55,12 +52,11 @@
               <h3>Painting Title</h3>
               <p class="painting-medium">Medium: Oil on Canvas</p>
               <p class="painting-dimensions">Dimensions: 50cm x 50cm</p>
-              <p class="painting-description">Add your painting description here. Include details about the inspiration, technique, or story behind this piece.</p>
+              <p class="painting-description">Add your painting description here.</p>
               <p class="painting-price">Price: £[Amount]</p>
             </div>
           </div>
 
-          <!-- Painting 3 -->
           <div class="painting-listing">
             <div class="painting-image">
               <img src="images/3.jpg" alt="Painting 3 by Julie Martin" width="400" height="400" />
@@ -69,12 +65,11 @@
               <h3>Painting Title</h3>
               <p class="painting-medium">Medium: Oil on Canvas</p>
               <p class="painting-dimensions">Dimensions: 50cm x 50cm</p>
-              <p class="painting-description">Add your painting description here. Include details about the inspiration, technique, or story behind this piece.</p>
+              <p class="painting-description">Add your painting description here.</p>
               <p class="painting-price">Price: £[Amount]</p>
             </div>
           </div>
 
-          <!-- Painting 4 -->
           <div class="painting-listing">
             <div class="painting-image">
               <img src="images/4.jpg" alt="Painting 4 by Julie Martin" width="400" height="400" />
@@ -83,26 +78,10 @@
               <h3>Painting Title</h3>
               <p class="painting-medium">Medium: Oil on Canvas</p>
               <p class="painting-dimensions">Dimensions: 50cm x 50cm</p>
-              <p class="painting-description">Add your painting description here. Include details about the inspiration, technique, or story behind this piece.</p>
+              <p class="painting-description">Add your painting description here.</p>
               <p class="painting-price">Price: £[Amount]</p>
             </div>
           </div>
-
-          <!-- Template for adding more paintings - duplicate this block -->
-          <!-- 
-          <div class="painting-listing">
-            <div class="painting-image">
-              <img src="images/5.jpg" alt="Painting Title by Julie Martin" width="400" height="400" />
-            </div>
-            <div class="painting-details">
-              <h3>Painting Title</h3>
-              <p class="painting-medium">Medium: Oil on Canvas</p>
-              <p class="painting-dimensions">Dimensions: 50cm x 50cm</p>
-              <p class="painting-description">Add your painting description here. Include details about the inspiration, technique, or story behind this piece.</p>
-              <p class="painting-price">Price: £[Amount]</p>
-            </div>
-          </div>
-          -->
         </div>
       </div>
     </div>
@@ -110,7 +89,14 @@
       <p>www.juliemartinfineart.co.uk</p>
     </footer>
   </div>
-  <!-- javascript at the bottom for fast page loading -->
+
+  <div id="lightbox" class="lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close">&times;</button>
+      <img id="lightbox-image" src="" alt="Enlarged painting" />
+    </div>
+  </div>
+
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.easing.min.js"></script>
   <script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
@@ -120,6 +106,35 @@
       $("#lava_menu").lavaLamp({
         fx: "backout",
         speed: 700
+      });
+
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImage = document.getElementById('lightbox-image');
+      const lightboxClose = document.querySelector('.lightbox-close');
+
+      document.querySelectorAll('.painting-image img').forEach(img => {
+        img.addEventListener('click', function(e) {
+          e.preventDefault();
+          lightboxImage.src = this.src;
+          lightboxImage.alt = this.alt;
+          lightbox.classList.add('active');
+        });
+      });
+
+      lightboxClose.addEventListener('click', function() {
+        lightbox.classList.remove('active');
+      });
+
+      lightbox.addEventListener('click', function(e) {
+        if (e.target === lightbox) {
+          lightbox.classList.remove('active');
+        }
+      });
+
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+          lightbox.classList.remove('active');
+        }
       });
     });
   </script>
