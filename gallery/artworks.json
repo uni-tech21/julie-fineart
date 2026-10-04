@@ -1,0 +1,42 @@
+[
+  {
+    "id": "small-study",
+    "title": "Small landscape study",
+    "category": "Small works",
+    "price": "From £125",
+    "image": "../images/1.jpg",
+    "alt": "Temporary example photograph of a snow-covered village",
+    "description": "A guide price for a smaller original work. Enquire for the available artwork, size and materials.",
+    "preview": true
+  },
+  {
+    "id": "nature-study",
+    "title": "Nature study",
+    "category": "Medium works",
+    "price": "From £250",
+    "image": "../images/2.jpg",
+    "alt": "Temporary example photograph of a winter hedgerow",
+    "description": "A guide price for a medium-sized original work inspired by the natural world. Details and availability are confirmed by Julie.",
+    "preview": true
+  },
+  {
+    "id": "landscape-painting",
+    "title": "Landscape painting",
+    "category": "Larger works",
+    "price": "From £450",
+    "image": "../images/4.jpg",
+    "alt": "Temporary example photograph of a tree in snow",
+    "description": "A guide price for a larger original work. The final price depends on the piece, its size, materials and framing.",
+    "preview": true
+  },
+  {
+    "id": "commission",
+    "title": "Commissioned artwork",
+    "category": "Made for you",
+    "price": "From £250",
+    "image": "../images/3.jpg",
+    "alt": "Temporary example photograph of a snow-covered landscape",
+    "description": "Have a subject in mind? Discuss your ideas, reference photographs and preferred size with Julie before agreeing a price.",
+    "preview": true
+  }
+]

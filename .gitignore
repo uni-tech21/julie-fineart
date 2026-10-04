@@ -2,3 +2,4 @@ vendor/
 .env
 /tmp/contact_sent.log
 /tmp/contact_failed.log
+*.log

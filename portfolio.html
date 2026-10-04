@@ -1,142 +1,26 @@
-<!DOCTYPE HTML>
-<html>
-
-<head>
-  <title>Gallery | Julie Martin</title>
-  <meta name="description" content="website description" />
-  <meta name="keywords" content="website keywords, website keywords" />
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <link rel="icon" type="image/png" sizes="512x512" href="favicon.png" />
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
-</head>
-
-<body>
-  <div id="main">
-    <header>
-      <div id="logo"><h1>the<a href="#">gallery</a></h1></div>
-      <nav>
-        <ul class="lavaLampWithImage" id="lava_menu">
-          <li><a href="index.html">home</a></li>
-          <li><a href="about.html">about Julie</a></li>
-          <li class="current"><a href="portfolio.html">gallery</a></li>
-          <li><a href="contact.html">contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="site_content">
-      <div id="content">
-        <h1>Gallery of Julie Martin</h1>
-        <p>Browse through a selection of fine art paintings. Each piece is individually crafted and available for purchase.</p>
-        <p>New paintings are added regularly, so check back often to see the latest creations.</p>
-        
-        <div id="paintings-gallery">
-          <div class="painting-listing">
-            <div class="painting-image">
-              <img src="images/1.jpg" alt="Painting 1 by Julie Martin" width="400" height="400" />
-            </div>
-            <div class="painting-details">
-              <h3>Painting Title</h3>
-              <p class="painting-medium">Medium: Oil on Canvas</p>
-              <p class="painting-dimensions">Dimensions: 50cm x 50cm</p>
-              <p class="painting-description">Add your painting description here.</p>
-              <p class="painting-price">Price: £[Amount]</p>
-            </div>
-          </div>
-
-          <div class="painting-listing">
-            <div class="painting-image">
-              <img src="images/2.jpg" alt="Painting 2 by Julie Martin" width="400" height="400" />
-            </div>
-            <div class="painting-details">
-              <h3>Painting Title</h3>
-              <p class="painting-medium">Medium: Oil on Canvas</p>
-              <p class="painting-dimensions">Dimensions: 50cm x 50cm</p>
-              <p class="painting-description">Add your painting description here.</p>
-              <p class="painting-price">Price: £[Amount]</p>
-            </div>
-          </div>
-
-          <div class="painting-listing">
-            <div class="painting-image">
-              <img src="images/3.jpg" alt="Painting 3 by Julie Martin" width="400" height="400" />
-            </div>
-            <div class="painting-details">
-              <h3>Painting Title</h3>
-              <p class="painting-medium">Medium: Oil on Canvas</p>
-              <p class="painting-dimensions">Dimensions: 50cm x 50cm</p>
-              <p class="painting-description">Add your painting description here.</p>
-              <p class="painting-price">Price: £[Amount]</p>
-            </div>
-          </div>
-
-          <div class="painting-listing">
-            <div class="painting-image">
-              <img src="images/4.jpg" alt="Painting 4 by Julie Martin" width="400" height="400" />
-            </div>
-            <div class="painting-details">
-              <h3>Painting Title</h3>
-              <p class="painting-medium">Medium: Oil on Canvas</p>
-              <p class="painting-dimensions">Dimensions: 50cm x 50cm</p>
-              <p class="painting-description">Add your painting description here.</p>
-              <p class="painting-price">Price: £[Amount]</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer>
-      <p>www.juliemartinfineart.co.uk</p>
-    </footer>
-  </div>
-
-  <div id="lightbox" class="lightbox">
-    <div class="lightbox-content">
-      <button class="lightbox-close">&times;</button>
-      <img id="lightbox-image" src="" alt="Enlarged painting" />
-    </div>
-  </div>
-
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
-  <script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
-  <script type="text/javascript" src="js/image_fade.js"></script>
-  <script type="text/javascript">
-    $(function() {
-      $("#lava_menu").lavaLamp({
-        fx: "backout",
-        speed: 700
-      });
-
-      const lightbox = document.getElementById('lightbox');
-      const lightboxImage = document.getElementById('lightbox-image');
-      const lightboxClose = document.querySelector('.lightbox-close');
-
-      document.querySelectorAll('.painting-image img').forEach(img => {
-        img.addEventListener('click', function(e) {
-          e.preventDefault();
-          lightboxImage.src = this.src;
-          lightboxImage.alt = this.alt;
-          lightbox.classList.add('active');
-        });
-      });
-
-      lightboxClose.addEventListener('click', function() {
-        lightbox.classList.remove('active');
-      });
-
-      lightbox.addEventListener('click', function(e) {
-        if (e.target === lightbox) {
-          lightbox.classList.remove('active');
-        }
-      });
-
-      document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
-          lightbox.classList.remove('active');
-        }
-      });
-    });
-  </script>
-</body>
-</html>
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f5f2eb"><title>Gallery | Julie Martin Fine Art</title><meta name="description" content="Explore the Julie Martin Fine Art gallery, guide prices and artwork enquiries. Contact Julie for current pieces and commissions."><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="alternate icon" href="favicon.ico"><link rel="stylesheet" href="css/site.css?v=ae3fd7f08c7c"><script src="js/site.js?v=9c163b79e75a" defer></script><script src="js/gallery.js?v=499c94b9985b" defer></script></head><body id="top" class="page-portfolio"><a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="container header-inner"><a class="wordmark" href="index.html" aria-label="Julie Martin Fine Art home">Julie Martin<span>FINE ART</span></a><button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">Menu <span aria-hidden="true">☰</span></button><nav id="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="portfolio.html" aria-current="page">Gallery</a><a href="about.html">About Julie</a><a href="contact.html">Contact</a></nav></div></header><main id="main"><section class="page-intro container"><p class="eyebrow">JULIE MARTIN FINE ART</p><h1>The gallery.</h1><p>Original artwork inspired by landscapes, wildlife and nature. Enquire about available pieces or discuss a commission with Julie.</p></section><section class="container gallery-page-section" aria-label="Artwork gallery"><p class="gallery-notice" data-gallery-notice><span class="notice-dot" aria-hidden="true"></span>Artwork photographs are coming soon. The images shown are temporary examples; prices are guides.</p><div class="artwork-grid" data-artwork-grid><article class="artwork-card" id="small-study">
+ <a class="artwork-image" href="gallery/../images/1.jpg" data-artwork data-title="Small landscape study" data-caption="A guide price for a smaller original work. Enquire for the available artwork, size and materials. This is a temporary example photograph, not Julie’s artwork." data-price="From £125" aria-label="View Small landscape study preview">
+  <img src="gallery/../images/1.jpg" alt="Temporary example photograph of a snow-covered village" width="450" height="450" loading="lazy" decoding="async"><span class="preview-badge">Preview image</span>
+ </a>
+ <div class="artwork-meta"><p class="eyebrow">Small works</p><h3>Small landscape study</h3><div class="artwork-bottom"><span class="artwork-price">From £125</span><a href="contact.html?artwork=Small%20landscape%20study" class="artwork-enquire">Enquire</a></div></div>
+</article>
+<article class="artwork-card" id="nature-study">
+ <a class="artwork-image" href="gallery/../images/2.jpg" data-artwork data-title="Nature study" data-caption="A guide price for a medium-sized original work inspired by the natural world. Details and availability are confirmed by Julie. This is a temporary example photograph, not Julie’s artwork." data-price="From £250" aria-label="View Nature study preview">
+  <img src="gallery/../images/2.jpg" alt="Temporary example photograph of a winter hedgerow" width="450" height="450" loading="lazy" decoding="async"><span class="preview-badge">Preview image</span>
+ </a>
+ <div class="artwork-meta"><p class="eyebrow">Medium works</p><h3>Nature study</h3><div class="artwork-bottom"><span class="artwork-price">From £250</span><a href="contact.html?artwork=Nature%20study" class="artwork-enquire">Enquire</a></div></div>
+</article>
+<article class="artwork-card" id="landscape-painting">
+ <a class="artwork-image" href="gallery/../images/4.jpg" data-artwork data-title="Landscape painting" data-caption="A guide price for a larger original work. The final price depends on the piece, its size, materials and framing. This is a temporary example photograph, not Julie’s artwork." data-price="From £450" aria-label="View Landscape painting preview">
+  <img src="gallery/../images/4.jpg" alt="Temporary example photograph of a tree in snow" width="450" height="450" loading="lazy" decoding="async"><span class="preview-badge">Preview image</span>
+ </a>
+ <div class="artwork-meta"><p class="eyebrow">Larger works</p><h3>Landscape painting</h3><div class="artwork-bottom"><span class="artwork-price">From £450</span><a href="contact.html?artwork=Landscape%20painting" class="artwork-enquire">Enquire</a></div></div>
+</article>
+<article class="artwork-card" id="commission">
+ <a class="artwork-image" href="gallery/../images/3.jpg" data-artwork data-title="Commissioned artwork" data-caption="Have a subject in mind? Discuss your ideas, reference photographs and preferred size with Julie before agreeing a price. This is a temporary example photograph, not Julie’s artwork." data-price="From £250" aria-label="View Commissioned artwork preview">
+  <img src="gallery/../images/3.jpg" alt="Temporary example photograph of a snow-covered landscape" width="450" height="450" loading="lazy" decoding="async"><span class="preview-badge">Preview image</span>
+ </a>
+ <div class="artwork-meta"><p class="eyebrow">Made for you</p><h3>Commissioned artwork</h3><div class="artwork-bottom"><span class="artwork-price">From £250</span><a href="contact.html?artwork=Commissioned%20artwork" class="artwork-enquire">Enquire</a></div></div>
+</article></div><p class="price-note">Guide prices depend on size, materials and framing. Julie will confirm the price and availability before you order.</p></section><section class="gallery-enquiry container"><div><p class="eyebrow">MADE FOR YOU</p><h2>Discuss a commission.</h2><p>Share your subject, preferred size and any reference photographs. Julie can talk through the options and confirm a quote.</p></div><a class="button" href="contact.html?artwork=Commissioned%20artwork">Contact Julie</a></section></main><footer class="site-footer"><div class="container"><div class="footer-top"><a class="wordmark" href="index.html">Julie Martin<span>FINE ART</span></a><p>Landscapes, wildlife<br>and the natural world.</p><nav aria-label="Footer navigation"><a href="portfolio.html">Gallery</a><a href="about.html">About Julie</a><a href="contact.html">Contact</a></nav></div><div class="footer-bottom"><span>© <span data-year>2026</span> Julie Martin Fine Art</span><a href="mailto:hello@juliemartinfineart.co.uk">hello@juliemartinfineart.co.uk</a></div></div></footer><dialog class="artwork-dialog" id="artwork-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-caption"><button class="dialog-close icon-button" type="button" data-dialog-close aria-label="Close artwork viewer">×</button><div class="dialog-layout"><div class="dialog-image-stage"><img id="dialog-image" alt=""><p id="dialog-error" role="status" hidden></p></div><div class="dialog-details"><p class="eyebrow">A CLOSER LOOK</p><h2 id="dialog-title"></h2><p id="dialog-price" class="dialog-price"></p><p id="dialog-caption"></p><a id="dialog-enquire" class="button" href="contact.html">Enquire about this work</a><div class="dialog-navigation"><button class="icon-button" type="button" data-gallery-prev aria-label="Previous artwork">Previous</button><span id="dialog-position" aria-live="polite" aria-atomic="true"></span><button class="icon-button" type="button" data-gallery-next aria-label="Next artwork">Next</button></div></div></div></dialog></body></html>
